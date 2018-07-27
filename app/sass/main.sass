@@ -1,0 +1,108 @@
+@import "colors" //интегрируем переменные с цветами
+
+
+/*Specification*/
+
+ul
+	padding: 0
+	margin: 0
+	list-style: none
+
+p, h1, h5
+	margin: 0
+
+body
+ font-family: 'PT Astra Sans', sans-serif
+ font-size: 14px
+ font-weight: 400
+ color: $body-text
+
+input
+ outline: none
+ border-top: 0
+
+/*header*/
+.header
+	&-bg
+		background: url(../img/Layer-911.jpg) no-repeat 30% 35%
+  //height: 755px
+.dark-bg
+ background: rgba(0, 0, 0, 0.2) 
+.socials
+	margin: 15px 0 35px
+	&__item
+		margin-right: 20px
+		a
+			color: $menu-text
+			text-decoration: none
+.contacts
+	margin-top: 15px
+ p
+  margin-left: 30px
+  color: $menu-text
+  font-weight: 700
+  span
+   margin: 0 0 0 20px
+   font-size: 12px
+   font-weight: 400
+   opacity: 0.5
+.lang
+ margin-top: 20px
+.logo
+	small
+		margin-left: 10px
+		position: absolute
+		font-family: 'PT Sans', sans-serif
+		font-size: 9px
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 1.2em
+		color: $logo-text
+		span
+			color: $active
+.menu
+ &__item
+ 	margin-left: 45px
+ 	a
+   font-family: 'PT Sans', sans-serif
+			font-size: 12px
+			text-transform: uppercase
+   color: $menu-text
+.header-title
+	margin: 100px 0 295px
+	color: $menu-text
+	h1
+		margin-left: 225px
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 700
+	&__text
+  //margin: 100px 0 0 435px
+  margin: 100px 0 0 435px
+  width: 265px
+  font-size: 16px
+  text-align: center
+.more-progect
+	background: url(../img/arrow.png) no-repeat
+	width: 80px
+	height: 40px
+	border: 1px solid $menu-text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" //интегрируем медиа запросы
