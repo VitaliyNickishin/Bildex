@@ -1,5 +1,5 @@
 @import "colors" //интегрируем переменные с цветами
-
+@import "fontello" //иконки с fontello
 
 /*Specification*/
 
@@ -21,21 +21,21 @@ input
  outline: none
  border-top: 0
 
-/*header*/
+/*hero*/
 .header
-	&-bg
+	&-bg /*основной фон*/
 		background: url(../img/Layer-911.jpg) no-repeat 30% 35%
   //height: 755px
-.dark-bg
+.dark-bg /*темный фон*/
  background: rgba(0, 0, 0, 0.2) 
-.socials
+.socials /*социальные иконки*/
 	margin: 15px 0 35px
 	&__item
 		margin-right: 20px
 		a
 			color: $menu-text
 			text-decoration: none
-.contacts
+.contacts /*контакты*/
 	margin-top: 15px
  p
   margin-left: 30px
@@ -46,9 +46,9 @@ input
    font-size: 12px
    font-weight: 400
    opacity: 0.5
-.lang
+.lang /*иконки с флагами языков*/
  margin-top: 20px
-.logo
+.logo /*логотип*/
 	small
 		margin-left: 10px
 		position: absolute
@@ -60,16 +60,42 @@ input
 		color: $logo-text
 		span
 			color: $active
-.menu
- &__item
+.menu /*меню*/
+ &__item /*основные элементы*/
  	margin-left: 45px
+ 	color: $menu-text
+ 	padding-bottom: 25px
+ 	border-bottom: 1px solid transparent
+ 	//transition: all 0.2s ease
+ 	position: relative
+		&:hover
+			border-bottom: 1px solid $menu-text
+		&:hover
+   .menu-sub
+   	display: block
+    &__item
+   	 display: block
  	a
+   display: block
    font-family: 'PT Sans', sans-serif
 			font-size: 12px
 			text-transform: uppercase
+			text-decoration: none
    color: $menu-text
-.header-title
-	margin: 100px 0 295px
+.menu-sub /*выпадающие элементы*/
+ position: absolute
+ width: 205px
+ top: 43px
+ border-top: 1px solid $menu-text
+ display: none
+ li
+  a
+   padding: 15px 0 0 15px
+   background: #000
+   		
+
+.header-title /*заголовок*/
+	margin: 85px 0 115px
 	color: $menu-text
 	h1
 		margin-left: 225px
@@ -77,16 +103,41 @@ input
 		text-transform: uppercase
 		font-weight: 700
 	&__text
-  //margin: 100px 0 0 435px
-  margin: 100px 0 0 435px
+  margin: 90px 0 0 435px
   width: 265px
   font-size: 16px
   text-align: center
-.more-progect
-	background: url(../img/arrow.png) no-repeat
+  line-height: 1.2em
+.more-progect /*кнопка узнать больше*/
+	margin-right: 235px
+	text-align: center
 	width: 80px
-	height: 40px
 	border: 1px solid $menu-text
+ opacity: 0.5
+ &:hover /*раскрытие кнопки*/
+ 	margin-right: 90px
+ 	width: 225px
+ 	opacity: 1 
+ p
+ 	display: none
+ 	font-family: 'PT Sans', sans-serif
+ 	font-size: 12px
+ 	font-weight: 700
+ &:hover
+  p
+   display: inline-block	
+ a
+ 	display: block
+ 	color: $menu-text
+ 	text-decoration: none
+  img /*стрелочка*/
+   padding: 16px 0 16px
+.angle-down /*нижний скролл*/
+ margin-top: 125px
+ font-size: 30px
+ a
+ 	color: $menu-text
+	 text-decoration: none
 
 
 
