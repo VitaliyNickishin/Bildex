@@ -201,9 +201,84 @@ input
  	line-height: 1.2em
  	margin-bottom: 25px
  img
-		margin-bottom: 185px
-		
-  
+		//margin-bottom: 185px
+.equalizer
+	margin: 30px 0 100px
+	text-align: right
+	img
+  margin-right: 90px
+
+/*4 section*/
+.projects
+.projects-title
+ margin: 90px 0 30px
+.aziat-office /*первый блок*/
+	margin-left: 50px
+	position: relative
+	p
+		margin-top: 25px
+		display: inline-block
+	&__title
+		font-size: 18px
+ 	font-weight: 700
+ 	margin-bottom: 120px
+ &__more
+ 	color: $logo-text
+ 	margin-left: 115px
+.facts
+ margin-left: 80px 
+ h3
+  font-size: 14px
+ 	font-weight: 700
+ p
+  margin-bottom: 15px
+  font-size: 12px
+.bg /*задний фон основного изображения*/
+	width: 510px
+	height: 470px
+	border: 1px solid $bg-border
+ position: absolute
+ top: 65px
+ left: -50px
+ writing-mode: vertical-lr
+ z-index: -1
+ box-shadow: -5px 15px 20px $bg-border
+ span /*вертикальный текст*/
+ 	color: $bg-text
+ 	position: absolute
+  transform: rotate(180deg)
+  top: 15px
+  left: 15px
+.mria-office /*второй блок*/
+ margin-left: 30px
+ position: relative
+ p
+		margin-top: 25px
+		display: inline-block
+	&__title
+		@extend .aziat-office__title
+ &__more
+ 	@extend .aziat-office__more
+.bg_top
+	top: 100px
+.school /*третий блок*/
+ margin-left: 50px
+ position: relative
+ p
+		margin-top: 25px
+		display: inline-block
+	&__title
+		@extend .aziat-office__title
+ &__more
+ 	@extend .aziat-office__more
+.bg_top
+	top: 100px	
+
+
+
+
+
+
 
 
 
