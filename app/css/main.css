@@ -365,8 +365,7 @@ input {
 .border-hover {
   width: 280px;
   height: 410px;
-  border: 1px solid #f5703b;
-  margin-bottom: 80px; }
+  border: 1px solid transparent; }
   .border-hover:hover {
     border: 1px solid #f5703b; }
 
@@ -380,5 +379,70 @@ input {
   .contract__text {
     margin: 25px 0 25px;
     line-height: 1.3em; }
+
+/*6 section*/
+.partners-title {
+  margin: 190px 0 65px; }
+
+.partners-group {
+  margin-bottom: 100px;
+  opacity: 0.5; }
+  .partners-group img {
+    margin-right: 30px; }
+    .partners-group img:last-child {
+      margin-right: 0; }
+
+/*7 section*/
+.form-bg {
+  background: url(../img/Layer-276.jpg) no-repeat 50% 50%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  height: 745px;
+  color: #fff;
+  text-align: center;
+  padding: 45px 0 35px; }
+  .form-bg__title p {
+    font-size: 12px; }
+
+/*footer*/
+.footer-logo {
+  margin-top: 30px; }
+
+.socials_black {
+  margin: 20px 0 50px; }
+
+.socials__item_black a {
+  color: #000;
+  text-decoration: none; }
+
+.footer-contacts {
+  margin: 30px 0 45px; }
+  .footer-contacts p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #9197a1;
+    letter-spacing: 0.2em; }
+  .footer-contacts span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-top: 20px; }
+  .footer-contacts__address {
+    width: 135px; }
+  .footer-contacts__tel {
+    width: 85px;
+    margin: 0 105px 0 60px; }
+  .footer-contacts__email {
+    width: 70px; }
+
+.copy p {
+  margin-bottom: 40px;
+  font-size: 12px; }
+
+.makebecool {
+  font-size: 12px;
+  color: #9197a1; }
 
 /* 961 - 1368 px */
