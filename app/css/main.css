@@ -85,7 +85,7 @@ ul {
   margin: 0;
   list-style: none; }
 
-p, h1, h5 {
+p, h1, h2, h3 {
   margin: 0; }
 
 body {
@@ -107,6 +107,18 @@ input {
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
   font-weight: 700; }
+
+.more a {
+  display: block;
+  color: #fff;
+  text-decoration: none; }
+
+.more__text {
+  color: #f5703b;
+  display: none; }
+
+.more:hover p {
+  display: inline-block; }
 
 /*hero*/
 .header-bg {
@@ -227,12 +239,12 @@ input {
 .service-title {
   margin: 105px 0 55px; }
 
-.border-hover {
+.agle-hover {
   width: 290px;
   height: 350px;
   border: 4px solid transparent;
   margin-bottom: 80px; }
-  .border-hover:hover {
+  .agle-hover:hover {
     border: 4px solid #f5703b; }
 
 .general {
@@ -245,18 +257,6 @@ input {
     text-transform: uppercase; }
   .general__text {
     margin: 45px 0 25px; }
-
-.general-more a {
-  display: block;
-  color: #fff;
-  text-decoration: none; }
-
-.general-more__text {
-  color: #f5703b;
-  display: none; }
-
-.general-more:hover p {
-  display: inline-block; }
 
 /*3 section*/
 .counters {
@@ -352,8 +352,33 @@ input {
   .school p {
     margin-top: 25px;
     display: inline-block; }
+  .school__title {
+    margin-bottom: 0; }
 
 .bg_top {
   top: 100px; }
+
+/*5 section*/
+.rules-title {
+  margin: 190px 0 55px; }
+
+.border-hover {
+  width: 280px;
+  height: 410px;
+  border: 1px solid #f5703b;
+  margin-bottom: 80px; }
+  .border-hover:hover {
+    border: 1px solid #f5703b; }
+
+.contract {
+  margin: 45px 0 0 40px; }
+  .contract__icon {
+    margin-bottom: 80px; }
+  .contract__title {
+    font-size: 24px;
+    font-weight: 700; }
+  .contract__text {
+    margin: 25px 0 25px;
+    line-height: 1.3em; }
 
 /* 961 - 1368 px */

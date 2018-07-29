@@ -8,7 +8,7 @@ ul
 	margin: 0
 	list-style: none
 
-p, h1, h5
+p, h1, h2, h3
 	margin: 0
 
 body
@@ -31,6 +31,17 @@ input
  font-size: 12px
  font-weight: 700
  
+.more //активная надпись со стрелочкой
+	a
+ 	display: block
+ 	color: $menu-text
+ 	text-decoration: none
+	&__text
+  color: $active
+  display: none
+ &:hover
+ 	p
+   display: inline-block
 
 /*hero*/
 .header
@@ -147,7 +158,7 @@ input
  background: $menu-text
 .service-title /*заголовок*/
  margin: 105px 0 55px
-.border-hover /*рамка при наведении*/
+.agle-hover /*уголки при наведении*/
 	width: 290px
 	height: 350px
 	border: 4px solid transparent
@@ -166,19 +177,7 @@ input
   margin: 45px 0 25px
 	//&__arrow
 		//margin-bottom: 40px
-.general-more
-	a
- 	display: block
- 	color: $menu-text
- 	text-decoration: none
-	&__text
-  color: $active
-  display: none
- //&__arrow
- 	//display: none
- &:hover
- 	p
-   display: inline-block
+
 
 /*3 section*/
 .counters
@@ -269,13 +268,34 @@ input
 		display: inline-block
 	&__title
 		@extend .aziat-office__title
+		margin-bottom: 0
  &__more
  	@extend .aziat-office__more
 .bg_top
 	top: 100px	
 
-
-
+/*5 section*/
+.rules
+ //background: $menu-text
+.rules-title /*заголовок*/
+ margin: 190px 0 55px
+.border-hover /*рамка при наведении*/
+	width: 280px
+	height: 410px
+	border: 1px solid $active
+	margin-bottom: 80px
+	&:hover
+		border: 1px solid $active
+.contract /*блок договор генподряда*/
+	margin: 45px 0 0 40px
+	&__icon
+		margin-bottom: 80px
+	&__title
+		font-size: 24px
+  font-weight: 700
+	&__text
+  margin: 25px 0 25px
+  line-height: 1.3em
 
 
 
