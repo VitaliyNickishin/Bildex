@@ -280,7 +280,80 @@ input {
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 25px; }
-  .business img {
-    margin-bottom: 185px; }
+
+.equalizer {
+  margin: 30px 0 100px;
+  text-align: right; }
+  .equalizer img {
+    margin-right: 90px; }
+
+/*4 section*/
+.projects-title {
+  margin: 90px 0 30px; }
+
+.aziat-office {
+  margin-left: 50px;
+  position: relative; }
+  .aziat-office p {
+    margin-top: 25px;
+    display: inline-block; }
+  .aziat-office__title, .mria-office__title, .school__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 120px; }
+  .aziat-office__more, .mria-office__more, .school__more {
+    color: #1b45a3;
+    margin-left: 115px; }
+
+.facts {
+  margin-left: 80px; }
+  .facts h3 {
+    font-size: 14px;
+    font-weight: 700; }
+  .facts p {
+    margin-bottom: 15px;
+    font-size: 12px; }
+
+.bg {
+  width: 510px;
+  height: 470px;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  top: 65px;
+  left: -50px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  z-index: -1;
+  -webkit-box-shadow: -5px 15px 20px #e5e5e5;
+          box-shadow: -5px 15px 20px #e5e5e5; }
+  .bg span {
+    color: #9197a1;
+    position: absolute;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    top: 15px;
+    left: 15px; }
+
+.mria-office {
+  margin-left: 30px;
+  position: relative; }
+  .mria-office p {
+    margin-top: 25px;
+    display: inline-block; }
+
+.bg_top {
+  top: 100px; }
+
+.school {
+  margin-left: 50px;
+  position: relative; }
+  .school p {
+    margin-top: 25px;
+    display: inline-block; }
+
+.bg_top {
+  top: 100px; }
 
 /* 961 - 1368 px */
