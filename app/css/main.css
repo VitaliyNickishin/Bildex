@@ -80,13 +80,14 @@
 
 /* '' */
 /*Specification*/
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-
 p, h1, h2, h3 {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 body {
   font-family: 'PT Astra Sans', sans-serif;
@@ -114,15 +115,19 @@ input {
   text-decoration: none; }
 
 .more__text {
-  color: #f5703b;
+  color: #9197a1;
   display: none; }
+  .more__text:hover {
+    color: #f5703b; }
 
 .more:hover p {
   display: inline-block; }
 
 /*hero*/
 .header-bg {
-  background: url(../img/Layer-911.jpg) no-repeat 30% 35%; }
+  background: url(../img/Layer-911.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 .dark-bg {
   background: rgba(0, 0, 0, 0.2); }
@@ -162,38 +167,55 @@ input {
   .logo small span {
     color: #f5703b; }
 
-.menu__item {
-  margin-left: 45px;
-  color: #fff;
-  padding-bottom: 25px;
-  border-bottom: 1px solid transparent;
-  position: relative; }
-  .menu__item:hover {
-    border-bottom: 1px solid #fff; }
-  .menu__item:hover .menu-sub {
-    display: block; }
-    .menu__item:hover .menu-sub__item {
-      display: block; }
-  .menu__item a {
-    display: block;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff; }
-
-.menu-sub {
-  position: absolute;
-  width: 205px;
-  top: 43px;
-  border-top: 1px solid #fff;
+#check-menu {
   display: none; }
-  .menu-sub li a {
-    padding: 15px 0 0 15px;
-    background: #000; }
+
+.menu__list {
+  margin-left: 45px;
+  position: relative;
+  padding-bottom: 240px; }
+  .menu__list:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 50px;
+    display: none; }
+  .menu__list:hover:after {
+    display: block; }
+  .menu__list:hover .menu__drop {
+    opacity: 1;
+    left: 0; }
+
+.menu a {
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
+  .menu a:hover {
+    text-decoration: none; }
+
+.menu__drop {
+  position: absolute;
+  border-top: 1px solid #fff;
+  opacity: 0;
+  top: 50px;
+  background: green; }
+  .menu__drop .menu__list-2 {
+    width: 205px;
+    background: #000;
+    padding: 7px 0 7px 15px; }
+    .menu__drop .menu__list-2:hover {
+      background: #1a1a1a; }
 
 .hero {
-  margin: 85px 0 115px;
+  margin: -85px 0 115px;
   color: #fff; }
   .hero__title {
     margin-left: 225px; }
@@ -202,7 +224,8 @@ input {
     width: 265px;
     font-size: 16px;
     text-align: center;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    position: relative; }
 
 .more-progect {
   margin-right: 235px;
@@ -244,23 +267,73 @@ input {
   height: 350px;
   border: 4px solid transparent;
   margin-bottom: 80px; }
+  .agle-hover:before {
+    content: "";
+    width: 230px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 45px; }
+  .agle-hover:after {
+    content: "";
+    width: 230px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    top: 346px;
+    left: 45px; }
   .agle-hover:hover {
     border: 4px solid #f5703b; }
+    .agle-hover:hover:before .agle-hover {
+      content: "";
+      width: 230px;
+      height: 4px;
+      position: absolute;
+      background: #fff;
+      top: 0;
+      left: 45px; }
 
 .general {
   margin: 40px 0 0 40px; }
+  .general:after {
+    content: "";
+    width: 4px;
+    height: 300px;
+    position: absolute;
+    background: #fff;
+    top: 24px;
+    left: 15px; }
+  .general:before {
+    content: "";
+    width: 4px;
+    height: 300px;
+    position: absolute;
+    background: #fff;
+    top: 24px;
+    left: 301px; }
   .general__icon {
     margin-bottom: 34px; }
+    .general__icon_indent-1 {
+      margin-bottom: 52px; }
   .general__title {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase; }
   .general__text {
-    margin: 45px 0 25px; }
+    margin: 27px 0 25px; }
+    .general__text_indent {
+      margin-top: 13px; }
+    .general__text_indent-2 {
+      margin: 26px 0 48px; }
+    .general__text_indent-3 {
+      margin: 48px 0 48px; }
 
 /*3 section*/
 .counters {
-  background: url(../img/Layer-19.jpg) no-repeat 10% 50%; }
+  background: url(../img/Layer-19.jpg) no-repeat 10% 50%;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 .dark-bg_bl {
   background: rgba(0, 0, 0, 0.4); }
@@ -270,22 +343,36 @@ input {
   color: #fff; }
 
 .business {
-  color: #fff; }
+  margin-left: 95px;
+  color: #fff;
+  position: relative; }
+  .business-agle {
+    position: absolute;
+    top: 100px;
+    left: -30px; }
   .business span {
     font-family: 'Exo 2', sans-serif;
     font-size: 96px;
     font-weight: 900; }
-  .business p {
+  .business__text {
     font-size: 18px;
     font-weight: 700;
     line-height: 1.2em;
     margin-bottom: 25px; }
+
+.objects {
+  margin-left: 30px; }
+  .objects__text {
+    margin-bottom: 46px; }
 
 .equalizer {
   margin: 30px 0 100px;
   text-align: right; }
   .equalizer img {
     margin-right: 90px; }
+
+.contractor {
+  margin-left: 50px; }
 
 /*4 section*/
 .projects-title {
@@ -365,9 +452,11 @@ input {
 .border-hover {
   width: 280px;
   height: 410px;
-  border: 1px solid transparent; }
+  border: 1px solid #e5e5e5; }
   .border-hover:hover {
-    border: 1px solid #f5703b; }
+    border: 1px solid #f5703b;
+    -webkit-box-shadow: 1px 1px 15px 0px #f5703b, -1px 0px 15px 0px #f5703b;
+            box-shadow: 1px 1px 15px 0px #f5703b, -1px 0px 15px 0px #f5703b; }
 
 .contract {
   margin: 45px 0 0 40px; }
@@ -376,9 +465,20 @@ input {
   .contract__title {
     font-size: 24px;
     font-weight: 700; }
+    .contract__title_indent {
+      margin-bottom: 85px; }
   .contract__text {
     margin: 25px 0 25px;
     line-height: 1.3em; }
+    .contract__text_indent {
+      margin-bottom: 50px; }
+
+.planka {
+  margin: 80px 0 0 -6px; }
+  .planka_avtor {
+    margin: 0 0 0 -12px; }
+  .planka_servise {
+    margin: 80px 0 0 -18px; }
 
 /*6 section*/
 .partners-title {
@@ -445,4 +545,6 @@ input {
   font-size: 12px;
   color: #9197a1; }
 
-/* 961 - 1368 px */
+@media screen and (max-width: 768px) {
+  #check-menu {
+    display: none; } }
