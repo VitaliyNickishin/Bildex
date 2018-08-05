@@ -17,8 +17,7 @@
 
 	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="css/main.css">
-	<!-- Media Queries File 
- <link rel="stylesheet" href="css/media.css">-->
+	
 </head>
 
 <body>
@@ -56,21 +55,23 @@
 							</div><!-- /.logo -->
 						</div><!-- /.col-lg-4 -->
 						<div class="col-lg-6 ml-auto">
-							<nav>
+							<nav class="dropdown">
+								<!-- <input type="checkbox" id="check-menu">
+								<label for="check-menu"><i class="icon-menu"></i></label>-->
 								<ul class="menu d-flex justify-content-end">
-									<li class="menu__item"><a href="#">О нас<i class="icon-angle-down"></i></a></li>
-									<li class="menu__item"><a href="#">Проекты</a></li>
-									<li class="menu__item"><a href="#">Услуги<i class="icon-angle-down"></a></i>
-	          <ul class="menu-sub">
-		         	<li class="menu-sub__item"><a href="#">Генеральный подряд</a></li>
-		         	<li class="menu-sub__item"><a href="#">Общестроительные работы</a></li>
-		         	<li class="menu-sub__item"><a href="#">Отделочные работы</a></li>
-		         	<li class="menu-sub__item"><a href="#">Инжиниринг</a></li>
-	          </ul> <!---->
+									<li class="menu__list"><a href="#" class="link-1">О нас<i class="icon-angle-down"></i></a></li>
+									<li class="menu__list"><a href="#" class="link-1">Проекты</a></li>
+									<li class="menu__list"><a href="#" class="link-1">Услуги<i class="icon-angle-down"></i></a>
+								     <ul class="menu__drop">
+								       <li class="menu__list-2"><a href="#" class="link-2">Генеральный подряд</a></li>
+								       <li class="menu__list-2"><a href="#" class="link-2">Общестроительные работы</a></li>
+									      <li class="menu__list-2"><a href="#" class="link-2">Отделочные работы</a></li>
+									      <li class="menu__list-2"><a href="#" class="link-2">Инжиниринг</a></li>
+								     </ul> 
 									</li>
-									<li class="menu__item"><a href="#">Новости</a></li>
-									<li class="menu__item"><a href="#">Контакты</a></li>
-								</ul><!-- /.menu -->
+							  <li class="menu__list"><a href="#" class="link-1">Новости</a></li>
+							  <li class="menu__list"><a href="#" class="link-1">Контакты</a></li>
+  						</ul><!-- /.menu -->
 							</nav>
 						</div><!-- /.col-lg-6 -->
 					</div><!-- /.row -->
@@ -122,16 +123,60 @@
 			<div class="col-lg-3">
 				<div class="agle-hover">
 					<div class="general">
-						<img src="img/bag.png" class="general__icon" alt="bag">
+						<img src="img/bag.png" class="general__icon general__icon_indent-1" alt="bag">
 						<h2 class="general__title">Генеральный<br> подряд</h2>
 						<p class="general__text">Мы берем на себя полную<br> отстветсвенность за качество<br> выполняемых работ</p>
 						<div class="more">
 							<a href="#">
 							 <p class="more__text know-more">Узнать больше</p>
-							 <img src="img/arrow-orange.png" class="more__arrow" alt="arrow-orange">
+							 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
 							</a>
 						</div><!-- /.more -->
-						 <!--<img src="img/arrow-grey.png" class="general__arrow" alt="arrow"> -->
+						</div><!-- /.general -->
+					</div><!-- /.agle-hover -->
+				</div><!-- /.col-lg-3 -->	
+			<div class="col-lg-3">
+				<div class="agle-hover">
+					<div class="general">
+						<img src="img/glass.png" class="general__icon" alt="glass">
+						<h2 class="general__title">обще-<br> строительные<br>работы</h2>
+						<p class="general__text general__text_indent">Производим комплексные<br>капитальные, косметические или<br>евро-ремонты</p>
+						<div class="more">
+							<a href="#">
+							 <p class="more__text know-more">Узнать больше</p>
+							 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+							</a>
+						</div><!-- /.more -->
+						</div><!-- /.general -->
+					</div><!-- /.agle-hover -->
+				</div><!-- /.col-lg-3 -->		
+			<div class="col-lg-3">
+				<div class="agle-hover">
+					<div class="general">
+						<img src="img/Rounded.png" class="general__icon" alt="Rounded">
+						<h2 class="general__title">Отделочные<br>работы</h2>
+						<p class="general__text general__text_indent-2">Поможем спроектировать,<br> провести, уложить и смонтировать</p>
+						<div class="more">
+							<a href="#">
+							 <p class="more__text know-more">Узнать больше</p>
+							 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+							</a>
+						</div><!-- /.more -->
+						</div><!-- /.general -->
+					</div><!-- /.agle-hover -->
+				</div><!-- /.col-lg-3 -->			
+			<div class="col-lg-3">
+				<div class="agle-hover">
+					<div class="general">
+						<img src="img/Ellipse-51.png" class="general__icon" alt="Ellipse">
+						<h2 class="general__title">Инжиниринг</h2>
+						<p class="general__text general__text_indent-3">Поможем спроектировать,<br> провести, уложить и смонтировать</p>
+						<div class="more">
+							<a href="#">
+							 <p class="more__text know-more">Узнать больше</p>
+							 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+							</a>
+						</div><!-- /.more -->
 						</div><!-- /.general -->
 					</div><!-- /.agle-hover -->
 				</div><!-- /.col-lg-3 -->	
@@ -150,11 +195,54 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="business">
+						<img src="img/agle-right-orange.png" class="business-agle" alt="agle">
 						<span>20</span>
-						<p>лет<br> успешной<br> работы</p>
-						 
-									<img src="img/arrow.png" alt="arrow">
-						
+						<p class="business__text">лет<br> успешной<br> работы</p>
+						 <div class="more">
+							<a href="#">
+							 <p class="more__text more__text_wh know-more">Узнать больше</p>
+							 <img src="img/arrow.png" class="more__arrow" alt="arrow">
+							</a>
+						</div><!-- /.more -->
+					</div><!-- /.business -->
+			</div><!-- /.col-lg-3 -->
+				<div class="col-lg-3">
+					<div class="business objects">
+						<img src="img/agle-right-orange.png" class="business-agle" alt="agle">
+						<span>200</span>
+						<p class="business__text objects__text">созданных<br> объектов</p>
+						 <div class="more">
+							<a href="#">
+							 <p class="more__text more__text_wh know-more">Узнать больше</p>
+							 <img src="img/arrow.png" class="more__arrow" alt="arrow">
+							</a>
+						</div><!-- /.more -->
+					</div><!-- /.business -->
+			</div><!-- /.col-lg-3 -->
+				<div class="col-lg-2">
+					<div class="business objects">
+						<img src="img/agle-right-orange.png" class="business-agle" alt="agle">
+						<span>50</span>
+						<p class="business__text objects__text">штатных<br>сотрудников</p>
+						 <div class="more">
+							<a href="#">
+							 <p class="more__text more__text_wh know-more">Узнать больше</p>
+							 <img src="img/arrow.png" class="more__arrow" alt="arrow">
+							</a>
+						</div><!-- /.more -->
+					</div><!-- /.business -->
+			</div><!-- /.col-lg-2 -->
+				<div class="col-lg-3">
+					<div class="business contractor">
+						<img src="img/agle-right-orange.png" class="business-agle" alt="agle">
+						<span>100</span>
+						<p class="business__text">проверенных<br>подрядчиков<br>и поставщиков</p>
+						 <div class="more">
+							<a href="#">
+							 <p class="more__text more__text_wh know-more">Узнать больше</p>
+							 <img src="img/arrow.png" class="more__arrow" alt="arrow">
+							</a>
+						</div><!-- /.more -->
 					</div><!-- /.business -->
 			</div><!-- /.col-lg-3 -->
 			</div><!-- /.row -->
@@ -234,7 +322,7 @@
 		</div><!-- /.row -->
 		<div class="row">
 			<div class="col-lg-3">
-				<div class="border-hover">
+				<div class="border-hover"><!-- 1 block -->
 					<div class="contract">
 						<img src="img/contract-gray.png" class="contract__icon" alt="contract">
 						<h2 class="contract__title">Договор<br>генподряда</h2>
@@ -248,6 +336,57 @@
 						</div><!-- /.contract -->
 					</div><!-- /.border-hover -->
 				</div><!-- /.col-lg-3 -->	
+				<div class="col-lg-3">
+					<div class="planka"><!-- 2 block -->
+					 <div class="border-hover">
+						 <div class="contract">
+							 <img src="img/Vector.png" class="contract__icon" alt="Vector">
+							 <h2 class="contract__title">Комплексное<br>решение</h2>
+						 	<p class="contract__text contract__text_indent">Делаем все работы полностью<br>под ключ</p>
+							 <div class="more">
+								 <a href="#">
+								 <p class="more__text know-more">Узнать больше</p>
+								 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+								 </a>
+							 </div><!-- /.more -->
+						 </div><!-- /.contract -->
+						</div><!-- /.border-hover -->
+					</div><!-- /.planka -->
+				</div><!-- /.col-lg-3 -->	
+				<div class="col-lg-3">
+					<div class="planka planka_avtor"><!-- 3 block -->
+					 <div class="border-hover">
+						 <div class="contract">
+							 <img src="img/Smart.png" class="contract__icon" alt="Smart">
+							 <h2 class="contract__title">Авторский и<br> технический<br> надзор проекта</h2>
+						 	<p class="contract__text">Прорабское управление и<br> контроль объекта на месте</p>
+							 <div class="more">
+								 <a href="#">
+								 <p class="more__text know-more">Узнать больше</p>
+								 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+								 </a>
+							 </div><!-- /.more -->
+						 </div><!-- /.contract -->
+						</div><!-- /.border-hover -->
+					</div><!-- /.planka -->
+				</div><!-- /.col-lg-3 -->	
+				<div class="col-lg-3">
+					<div class="planka planka_servise"><!-- 4 block -->
+					 <div class="border-hover">
+						 <div class="contract">
+							 <img src="img/Object.png" class="contract__icon" alt="Object">
+							 <h2 class="contract__title contract__title_indent">Договор на<br> послегарантийное<br> обслуживание</h2>
+							 <div class="more">
+								 <a href="#">
+								 <p class="more__text know-more">Узнать больше</p>
+								 <img src="img/arrow-grey.png" class="more__arrow" alt="arrow-grey">
+								 </a>
+							 </div><!-- /.more -->
+						 </div><!-- /.contract -->
+						</div><!-- /.border-hover -->
+					</div><!-- /.planka -->
+				</div><!-- /.col-lg-3 -->
+
 		</div><!-- /.row -->
 	</div><!-- /.container -->
 </section><!-- /.rules -->
